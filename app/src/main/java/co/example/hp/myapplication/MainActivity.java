@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
          final TextView text = (TextView) findViewById(R.id.text);
         Button button = (Button) findViewById(R.id.button);
+        Button button2 = (Button) findViewById(R.id.button2);
         text.setText("0");
 
 
@@ -29,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 text.setText(""+integer);
                 i++;
 
+            }
+        } );
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i=0;
+                text.setText(""+i);
             }
         } );
 
